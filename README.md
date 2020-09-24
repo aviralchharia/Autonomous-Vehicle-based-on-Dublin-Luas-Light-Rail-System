@@ -10,11 +10,17 @@ The Infra-Red module, Transmitter & Receiver circuits were designed & fabricated
 
 ## Receiver Circuit
 
+A receiver circuit is developed which is used to identify different locations on the path i.e., the receiver circuit will be attached/mounted on to the vehicle and when it will pass through the gantries, the IR signals emitted from the IR Emitter Diodes of the gantries, will fall on the Receiver Circuit, which in turn will signal the vehicle to stop at the gantries for some time. 
+
+### Working of the Receiver Circuit
+
+The Receiver circuit is based on the PWM (Pulse Width Modulation) Technique. The MBD701 Schottky Diode acts as the Receiver which senses the Infra-Red Radiations and sends then to the circuit accordingly. The infra-red radiations received by the diode is sent to the op-amp comparator which are then further sent to the capacitor where the signal is rectified to proper DC pulse. 
+
 <p align="center">
-    <img width="450" height="350" src = 'https://github.com/aviralchharia/Autonomous-Vehicle-based-on-Dublin-Luas-Light-Rail-System/blob/master/Images/PWM%20based%20Receiver%20Circuit.jpg?raw=true'
+    <img width="450" height="350" src = 'https://github.com/aviralchharia/Autonomous-Vehicle-based-on-Dublin-Luas-Light-Rail System/blob/master/Images/PWM%20based%20Receiver%20Circuit.jpg?raw=true'
 </p>
 
-
+An infra-red sensor is placed at the Gantries, so that when the vehicle will pass through it, the MBD701 Schottky diode will sense the IR Radiations and the vehicle will stop. Following this, after a certain interval the vehicle restarts its motion as the signals being sent to the diode from the comparator has been changed. Moreover, the first signal is sent directly from the diode to the comparator but the second signal is sent through the resister R2.
 
 ## Transmitter Circuit
 
