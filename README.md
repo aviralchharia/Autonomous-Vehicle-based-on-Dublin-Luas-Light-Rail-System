@@ -38,6 +38,24 @@ The RESET and VCC pins of the ATTINY45-20P microcontroller are connected to outp
 
 ## IR Module
 
+The IR Sensor Module Circuit which will be placed on the Robo Vehicle, would help it to move on a predefined path as a line follower.
+
+### Working of the IR Module
+
+The IR emitter emits continuous IR Rays which on reflecting from the white surface of the path are received by the IR Receiver. An IR Output terminal of the receiver varies depending on the intensity of the IR Rays it receives. Since this variation cannot be analysed as such, this output is passed through a operational amplifier. When the IR Receiver does not receive a signal due to absorption by the black path line, the potential at the inverting terminal goes higher than the non-inverting input of the LM358MM IC. Thus its output goes low, and the LED does not glow. Therefore, when both left and right senses black, the vehicle stops as shown in the figure below.
+
+<p align="center">
+    <img width="400" height="350" src = 'https://github.com/aviralchharia/Autonomous-Vehicle-based-on-Dublin-Luas-Light-Rail-System/blob/master/Images/Vehicle%20Stopping%20Condition.jpg?raw=true'
+</p>
+
+When the IR Receiver receives a signal reflected by the white light, the potential at the inverting end goes low. Thus the output of LM358MM IC goes high and the LED starts to glow indicating that the motor starts moving. When both left and right sensor senses white path then the Vehicle moves forward.
+
+<p align="center">
+    <img width="450" height="350" src = 'https://github.com/aviralchharia/Autonomous-Vehicle-based-on-Dublin-Luas-Light-Rail-System/blob/master/Images/Vehicle%20moving%20forward.jpg?raw=true'
+</p>
+
+The Resistors R1, R2, and R3 ensures that minimum 10 mA current passes through the IR LED Devices like the photodiode and the LEDs. 
+
 <p align="center">
     <img width="700" height="450" src = 'https://github.com/aviralchharia/Autonomous-Vehicle-based-on-Dublin-Luas-Light-Rail-System/blob/master/Images/IR%20Module.png?raw=true'
 </p>
