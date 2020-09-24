@@ -31,7 +31,7 @@ The Transmitter Circuit made for the stations will be placed at different locati
 The DC-Jack converts the AC Voltage into DC Voltage after which the voltage regulator IC 78L05Z limits the max voltage to 5V which is the requirement of our experiment. The capacitors C1 and C2 are used as filters which remove some AC components remaining in the signal (if any) after converting into DC signal. The output of this circuit is used as input in our main circuit that is the circuit on the right side. 
 
 <p align="center">
-    <img width="800" height="450" src = 'https://github.com/aviralchharia/Autonomous-Vehicle-based-on-Dublin-Luas-Light-Rail System/blob/master/Images/PWM%20based%20Transmitter%20Circuit.jpg?raw=true'
+    <img width="800" height="450" src = 'https://github.com/aviralchharia/Autonomous-Vehicle-based-on-Dublin-Luas-Light-Rail-System/blob/master/Images/PWM%20based%20Transmitter%20Circuit.jpg?raw=true'
 </p>
 
 The RESET and VCC pins of the ATTINY45-20P microcontroller are connected to output of voltage regulator and all the other pins are used as I/O pins in the micro-controller excluding the ground pin. The Emitting diode SFH482 is placed on the stations, which will transmit IR signals to the micro-controller. Then the output from micro-controller is given to PCB headers which gives output as different frequencies which is detected by the receiver circuit on the vehicle so as to identify the different stations the vehicle has passed through. The LED used, shows that the transmitter circuit works properly.
@@ -47,7 +47,3 @@ The RESET and VCC pins of the ATTINY45-20P microcontroller are connected to outp
 <p align="center">
     <img width="450" height="250" src = 'https://github.com/aviralchharia/Autonomous-Vehicle-based-on-Dublin-Luas-Light-Rail-System/blob/master/Images/Buggy%20Project-01.jpg?raw=true'
 </p>
-  
-  
-  
-  
